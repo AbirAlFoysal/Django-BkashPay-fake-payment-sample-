@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+<script src="https://cdn.tailwindcss.com"></script>
+<div class="relative text-black w-[379px] mx-auto block">
+    <img class="m-auto" src="{% static 'images/bkashImages/bkashPIN.png' %}">
+    <h1 class="absolute top-[18.8rem] left-[3.4rem] w-[15rem] m-auto ">
+    <input class="text-2xl text-center" type="password" placeholder="ENTER PIN" class="text-center ">    
+    </h1>
+
+    <h3 class="absolute text-xl  top-[4rem] left-[4rem]">{{phone}}</h3>
+    <a href="{% url 'bkashSuccess' %}" class="absolute text-lg text-black font-semibold  bottom-[4.4rem] right-[4rem]">CONFIRM</a>
+    <button class="absolute text-lg text-white font-semibold  bottom-[4.4rem] left-[4rem]">CANCEL</button>
+</div>
+
+{% endblock base %}

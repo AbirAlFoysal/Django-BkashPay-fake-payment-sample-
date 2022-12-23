@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+<script src="https://cdn.tailwindcss.com"></script>
+
+<div class="relative text-black w-[379px] mx-auto block">
+    <img class="m-auto" src="{% static 'images/bkashImages/bkashNumber.png' %}">
+    
+    
+    <form method="post" action="{% url 'pin' %}">
+            {% csrf_token %}
+    <h1 class="absolute text-lg top-[16.2rem] left-[5.5rem] w-[15rem] m-auto ">
+    <input name="phone" type="text" placeholder="e.g. o1XXXXXXXXX" class="text-center ">    
+    </h1>
+
+    <h3 class="absolute text-xl  top-[8.2rem] left-[20rem]">
+        <input type="text" disabled="true" value="{{amount}}" name="amount">
+    </h3>
+
+    <p  class="absolute text-lg text-black font-semibold  bottom-[3rem] right-[4rem]">
+
+        <input type="submit" value="CONFIRM">
+    </p>
+
+</form>
+
+<a href="" class="absolute text-lg text-white font-semibold  bottom-[3rem] left-[4rem]">CANCEL</a>
+
+</div>
+
+{% endblock base %}
