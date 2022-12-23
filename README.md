@@ -3,6 +3,11 @@ A. to run this project-
       1. download this project
       2. go to basedirectory (where manage.py exists)
       3. run "py manage.py runserver"
+
+B. This app contains these applications
+  
+ ![Screenshot 2022-12-23 173118](https://user-images.githubusercontent.com/58982471/209330039-7fabab73-8e31-4697-9701-ff4fdbb47c4d.png)
+
   
 # How to implement this to your project?
 
@@ -28,6 +33,8 @@ A. to run this project-
 
 
     F. go to 'http://localhost:8000/bkash/'to test if everything is working
+
+.
 
     G. In views.py of the app, change 'amount' and other dictionaries according to your project. 
     
