@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block base %}
-<p>Enter an amount | default user = username = "admin" password = "admin"</p>
+<p>Enter an amount: </p>
 <form  method="post">
     {% csrf_token %}
     <input type="text" name="amount" placeholder="amount">
